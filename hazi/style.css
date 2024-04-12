@@ -1,0 +1,52 @@
+*{
+    margin: auto;
+}
+
+:root{
+    --meret: 250px;
+}
+
+.kartya{
+    width: var(--meret);
+    height: var(--meret);
+    background-color: aqua;
+    border: 2px solid grey;
+}
+
+.kep1{
+    width: var(--meret);
+    height: var(--meret);
+    border: 5px solid red;
+}
+
+.kep2{
+    width: var(--meret);
+    height: var(--meret);
+    border: 5px blue dotted;
+}
+
+.kep3{
+    width: var(--meret);
+    height: var(--meret);
+    border: 5px green double;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+@media (max-width: 1280px) {
+    .grid-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
